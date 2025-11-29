@@ -12,76 +12,168 @@
 <body class="page-contact">
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="index.html" class="logo">
-        <span class="logo-main">UofM</span>
-        <span class="logo-sub">Polytechnic@UofM</span>
-      </a>
-      <nav class="nav" aria-label="Main navigation">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="about.html" class="nav-link">About</a>
-        <a href="programs.html" class="nav-link">Programs</a>
-        <a href="labs.html" class="nav-link">Labs &amp; Facilities</a>
-        <a href="research.html" class="nav-link">Research</a>
-        <a href="students.html" class="nav-link">Students</a>
-        <a href="news.html" class="nav-link">News &amp; Events</a>
-        <a href="contact.html" class="nav-link active">Contact</a>
-      </nav>
+ <header class="site-header">
+  <!-- 1) TOP UOFM BAR -->
+  <div class="uofm-bar">
+    <div class="container uofm-bar-inner">
+      <!-- You can replace this text with the actual logo image later -->
+      <span class="uofm-mark">THE UNIVERSITY OF MEMPHIS</span>
     </div>
-  </header>
+  </div>
+
+  <!-- 2) MIDDLE DEPARTMENT BAR -->
+  <div class="dept-bar">
+    <div class="container dept-bar-inner">
+      <h1 class="dept-title">POLYTECHNIC@UOFM</h1>
+    </div>
+  </div>
+
+  <!-- 3) BOTTOM NAV BAR -->
+  <nav class="main-nav" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="programs.html" class="nav-link">Programs</a>
+      <a href="labs.html" class="nav-link">Labs</a>
+      <a href="research.html" class="nav-link">Research</a>
+      <a href="students.html" class="nav-link">Students</a>
+      <a href="news.html" class="nav-link">News</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+  </nav>
+</header>
+
 
   <main id="main-content" class="site-main">
-    <section class="section">
-      <div class="container">
-        <h1>Contact Polytechnic@UofM</h1>
-        <p>
-          Use this page to provide clear contact information for students,
-          faculty, staff, and community partners interested in Polytechnic
-          programs, partnerships, or general questions.
-        </p>
 
-        <div class="two-column">
-          <div>
-            <h2>Contact details</h2>
-            <p>
-              <strong>Office:</strong> [Replace with building and room] <br />
-              <strong>Email:</strong>
-              <a href="mailto:polytechnic@memphis.edu">polytechnic@memphis.edu</a>
-              (placeholder) <br />
-              <strong>Phone:</strong> [Replace with main contact number]
+  <!-- Contact Page Header -->
+  <section class="section contact-header">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>
+        Connect with the Polytechnic@UofM leadership and academic staff for program information,
+        student support, and departmental inquiries.
+      </p>
+    </div>
+  </section>
+
+  <!-- Leadership & Academic Staff -->
+  <section class="section people-section">
+    <div class="container">
+      <h2>Leadership &amp; Academic Staff</h2>
+
+      <div class="people-grid">
+
+        <!-- Dr. Russell Deaton -->
+        <article class="person-card">
+          <div class="person-photo">
+            <img src="images/russell-deaton.png"
+                 alt="Dr. Russell Deaton">
+          </div>
+          <div class="person-info">
+            <h3>Dr. Russell Deaton</h3>
+            <p class="person-title">
+              Executive Director, Polytechnic@UofM<br>
+              Chair, Department of Engineering Technology
+            </p>
+            <p class="person-unit">
+              Professor of Electrical and Computer Engineering<br>
+              Herff College of Engineering
+            </p>
+            <p class="person-contact">
+              205 Engineering Science<br>
+              <a href="mailto:rjdeaton@memphis.edu">rjdeaton@memphis.edu</a><br>
+              901.678.3258
             </p>
           </div>
+        </article>
 
-          <div>
-            <h2>Contact form</h2>
-            <form class="contact-form" action="#" method="post">
-              <div class="form-group">
-                <label for="name">Name</label>
-                <input id="name" name="name" type="text" required />
-              </div>
-
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input id="email" name="email" type="email" required />
-              </div>
-
-              <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-              </div>
-
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-            <p class="muted">
-              Note: This is a static example. In production, connect this form to
-              an appropriate university form handler or contact process.
+        <!-- Dr. Alfred Hall -->
+        <article class="person-card">
+          <div class="person-photo">
+            <img src="images/alfred-hall.png"
+                 alt="Dr. Alfred Hall">
+          </div>
+          <div class="person-info">
+            <h3>Dr. Alfred Hall</h3>
+            <p class="person-title">
+              Special Assistant to the Provost<br>
+              Chair, Department of Applied Technology
+            </p>
+            <p class="person-contact">
+              234 Engineering Technology<br>
+              <a href="mailto:alhall1@memphis.edu">alhall1@memphis.edu</a><br>
+              901.678.2682
             </p>
           </div>
-        </div>
+        </article>
+
+        <!-- Captain Kimberly Coryat -->
+        <article class="person-card">
+          <div class="person-photo">
+            <img src="images/kimberly-coryat.png"
+                 alt="Captain Kimberly P. Coryat">
+          </div>
+          <div class="person-info">
+            <h3>Captain Kimberly P. Coryat</h3>
+            <p class="person-title">
+              Assistant Professor<br>
+              Aviation Program Coordinator
+            </p>
+            <p class="person-contact">
+              228 Engineering Technology<br>
+              <a href="mailto:kpcoryat@memphis.edu">kpcoryat@memphis.edu</a><br>
+              901.678.2225
+            </p>
+          </div>
+        </article>
+
+        <!-- Ira Collins -->
+        <article class="person-card">
+          <div class="person-photo">
+            <img src="images/ira-collins.png"
+                 alt="Ira Collins">
+          </div>
+          <div class="person-info">
+            <h3>Ira Collins</h3>
+            <p class="person-title">
+              Assistant Professor<br>
+              Information Technology Coordinator
+            </p>
+            <p class="person-contact">
+              212 Engineering Technology<br>
+              <a href="mailto:mcollins@memphis.edu">mcollins@memphis.edu</a><br>
+              901.678.2225
+            </p>
+          </div>
+        </article>
+
+        <!-- Mary Ewart -->
+        <article class="person-card">
+          <div class="person-photo">
+            <img src="images/mary-ewart.png"
+                 alt="Mary Ewart">
+          </div>
+          <div class="person-info">
+            <h3>Mary Ewart</h3>
+            <p class="person-title">
+              Academic Advisor<br>
+              Online Academic Services Coordinator
+            </p>
+            <p class="person-contact">
+              206 Engineering Technology<br>
+              <a href="mailto:mewart@memphis.edu">mewart@memphis.edu</a><br>
+              901.678.5784
+            </p>
+          </div>
+        </article>
+
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
+
+</main>
+
 
   <footer class="site-footer">
     <div class="container footer-inner">

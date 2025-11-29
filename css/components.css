@@ -1,10 +1,12 @@
 /* Hero */
 
 .hero {
+  /* top gradient approximating the UofM bar + lighter blue */
   background: linear-gradient(
     135deg,
-    var(--bg-alt) 0%,
-    var(--primary-soft) 60%,
+    var(--primary-dark) 0%,
+    var(--primary-mid) 40%,
+    var(--primary-light) 70%,
     var(--bg) 100%
   );
   padding: 2.5rem 0 3rem;
@@ -35,9 +37,10 @@
 
 .hero-card {
   background-color: #ffffff;
+  color: var(--text-main);
   padding: 1.5rem;
   border-radius: 1rem;
-  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.1);
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.15);
 }
 
 /* Buttons */
@@ -45,30 +48,22 @@
 .btn {
   display: inline-block;
   padding: 0.6rem 1.1rem;
-  border-radius: 999px;
   font-size: 0.9rem;
   font-weight: 500;
   border: 1px solid transparent;
 }
 
 .btn-primary {
-  background-color: var(--primary);
+  background-color: #003087;
   color: #ffffff;
 }
 
 .btn-primary:hover {
-  opacity: 0.92;
+  background-color: #00779E;
+  color: #ffffff;
 }
 
-.btn-outline {
-  background-color: transparent;
-  border-color: var(--primary);
-  color: var(--primary);
-}
 
-.btn-outline:hover {
-  background-color: var(--primary-soft);
-}
 
 /* Grids and cards */
 
@@ -86,7 +81,7 @@
 }
 
 .card {
-  background-color: #ffffff;
+  background-color: var(--bg-alt);
   border-radius: 0.9rem;
   padding: 1.25rem 1.35rem;
   border: 1px solid var(--border);
@@ -96,7 +91,7 @@
 
 .card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.12);
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.16);
 }
 
 /* Tags & text helpers */
@@ -106,8 +101,8 @@
   margin-bottom: 0.4rem;
   padding: 0.1rem 0.55rem;
   border-radius: 999px;
-  background-color: var(--primary-soft);
-  color: var(--primary);
+  background-color: var(--primary-light);
+  color: var(--primary-dark);
   font-size: 0.75rem;
   font-weight: 500;
 }
@@ -126,7 +121,7 @@
 }
 
 .news-item {
-  background-color: #ffffff;
+  background-color: var(--bg-alt);
   border-radius: 0.9rem;
   padding: 1.25rem 1.35rem;
   border: 1px solid var(--border);
@@ -142,7 +137,7 @@
 /* Forms */
 
 .contact-form {
-  background-color: #ffffff;
+  background-color: var(--bg-alt);
   border-radius: 0.9rem;
   padding: 1.25rem 1.35rem;
   border: 1px solid var(--border);

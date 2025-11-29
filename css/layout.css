@@ -1,4 +1,82 @@
-/* Layout helpers */
+/* COLORS (make sure these exist in base.css or here) */
+:root {
+  --uofm-blue: #00498f;   /* top bar */
+  --dept-blue: #012c58;   /* middle bar */
+  --nav-text: #00498f;    /* nav link color on white */
+}
+
+/* TOP UOFM BAR */
+.uofm-bar {
+  background-color: var(--uofm-blue);
+  padding: 1.1rem 0;                 /* height of top bar */
+}
+
+.uofm-bar-inner {
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.uofm-mark {
+  white-space: nowrap;
+}
+
+/* MIDDLE DEPARTMENT BAR */
+.dept-bar {
+  background-color: var(--dept-blue);
+  padding: 1.3rem 0;               /* height of middle bar */
+}
+
+.dept-bar-inner {
+  color: #ffffff;
+}
+
+.dept-title {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  color: #ffffff;  
+}
+
+/* BOTTOM NAV BAR (WHITE) */
+.main-nav {
+  background-color: #ffffff;
+  border-bottom: 1px solid #d7dde4;
+  padding: 1.3rem 0;  
+}
+
+.nav-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 2.5rem;                       /* spacing between menu items */
+  padding: 0.9rem 0;                 /* height of nav bar */
+}
+
+/* NAV LINKS */
+.nav-link {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #012c58;
+  white-space: nowrap;
+  padding-bottom: 0.1rem;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #4f4f4f;
+  border-bottom: 2px dotted var(--nav-text);
+}
+
+/* If you want an "active" page style */
+.nav-link.active {
+  border-bottom-color: var(--nav-text);
+}
+
 
 .container {
   max-width: 1120px;
@@ -9,8 +87,9 @@
 /* Header */
 
 .site-header {
-  background-color: var(--bg-alt);
-  border-bottom: 1px solid var(--border);
+  background-color: var(--primary-dark);
+  color: #ffffff;
+  border-bottom: 4px solid var(--primary-mid); /* thin colored bar like UofM */
 }
 
 .header-inner {
@@ -30,41 +109,14 @@
 
 .logo-main {
   font-size: 1.1rem;
-  color: var(--primary);
+  color: #ffffff;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
 .logo-sub {
   font-size: 0.8rem;
-  color: var(--text-muted);
-}
-
-/* Navigation */
-
-.nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.25rem;
-  justify-content: flex-end;
-}
-
-.nav-link {
-  font-size: 0.88rem;
-  padding: 0.35rem 0.75rem;
-  border-radius: 999px;
-  color: var(--text-muted);
-  transition: background-color 0.15s ease, color 0.15s ease;
-}
-
-.nav-link:hover {
-  background-color: var(--primary-soft);
-  color: var(--primary);
-}
-
-.nav-link.active {
-  background-color: var(--primary);
-  color: #ffffff;
+  color: var(--primary-light);
 }
 
 /* Main area */
@@ -76,7 +128,7 @@
 /* Sections */
 
 .section {
-  padding: 2.5rem 0;
+  padding: 0.5rem 0;
 }
 
 .section-alt {
@@ -88,10 +140,68 @@
   margin-bottom: 1.5rem;
 }
 
+/* Outreach Section Grid */
+.outreach-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+  margin-top: 2rem;
+}
+
+/* Card Style */
+.outreach-card {
+  background-color: #ffffff;
+  padding: 2rem;
+  border: 12px solid #00739d;   /* UofM teal border */
+  position: relative;
+}
+
+.outreach-card h2 {
+  color: #00498f;               /* heading blue */
+  margin-top: 0;
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.outreach-card p {
+  margin: 1rem 0 2.5rem;
+  color: #0c223f;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Button */
+.outreach-button {
+  display: inline-block;
+  background-color: #00498f;
+  color: #ffffff;
+  font-weight: 700;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  font-size: 1rem;
+  letter-spacing: 0.3px;
+  position: absolute;
+  bottom: 1.5rem;
+}
+
+.outreach-button .arrow {
+  font-weight: 900;
+  margin-left: 8px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .outreach-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
 /* Footer */
 
 .site-footer {
-  border-top: 1px solid var(--border);
+  border-top: 4px solid var(--primary-mid);
   background-color: var(--bg-alt);
 }
 

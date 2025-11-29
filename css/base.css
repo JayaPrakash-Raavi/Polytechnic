@@ -1,11 +1,15 @@
 :root {
-  --bg: #f5f7fb;
+  --uofm-blue: #00498f;     /* University-level header (top bar) */
+  --dept-blue: #012c58;     /* Department-level header (second bar) */
+  --primary: var(--uofm-blue);
+  --primary-dark: var(--dept-blue);
+  --primary-mid: #5a8aa6;   /* optional accent (like screenshot) */
+  --accent-green: #6c8f3f;  /* optional third bar */
+  --bg: #e8ecef;
   --bg-alt: #ffffff;
-  --primary: #004b8d;
-  --primary-soft: #e1ecf7;
-  --text-main: #111827;
+  --text-main: #00263a;
   --text-muted: #6b7280;
-  --border: #e5e7eb;
+  --border: #c4ced6;
 }
 
 /* Reset / base */
@@ -63,6 +67,15 @@ h2,
 h3 {
   margin-top: 0;
 }
+
+/* Headings - UofM Blue */
+h1, h2, h3, h4, h5, h6 {
+  color: #00498f;     /* UofM blue */
+  margin-top: 0;
+  font-weight: 700;
+}
+
+
 
 p {
   line-height: 1.6;
