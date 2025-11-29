@@ -1,0 +1,138 @@
+/* Layout helpers */
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Header */
+
+.site-header {
+  background-color: var(--bg-alt);
+  border-bottom: 1px solid var(--border);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+}
+
+/* Logo */
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+}
+
+.logo-main {
+  font-size: 1.1rem;
+  color: var(--primary);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.logo-sub {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* Navigation */
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  justify-content: flex-end;
+}
+
+.nav-link {
+  font-size: 0.88rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  color: var(--text-muted);
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.nav-link:hover {
+  background-color: var(--primary-soft);
+  color: var(--primary);
+}
+
+.nav-link.active {
+  background-color: var(--primary);
+  color: #ffffff;
+}
+
+/* Main area */
+
+.site-main {
+  padding-bottom: 3rem;
+}
+
+/* Sections */
+
+.section {
+  padding: 2.5rem 0;
+}
+
+.section-alt {
+  background-color: var(--bg-alt);
+}
+
+.section-title {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Footer */
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  background-color: var(--bg-alt);
+}
+
+.footer-inner {
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
+
+.footer-subtext {
+  margin-top: 0.25rem;
+  color: var(--text-muted);
+}
+
+.footer-subtext a {
+  text-decoration: underline;
+}
+
+/* Two-column layout */
+
+.two-column {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 1.75rem;
+}
+
+@media (min-width: 768px) {
+  .two-column {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Responsive header tweaks */
+
+@media (max-width: 768px) {
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .nav {
+    justify-content: flex-start;
+  }
+}

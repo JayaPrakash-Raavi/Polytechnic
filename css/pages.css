@@ -1,0 +1,13 @@
+/* Page-specific tweaks if needed */
+
+.page-home .hero {
+  margin-bottom: 0;
+}
+
+.page-news .news-item h2 {
+  margin-bottom: 0.35rem;
+}
+
+.page-contact .two-column {
+  align-items: flex-start;
+}
